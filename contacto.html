@@ -56,16 +56,30 @@
         <h2>Sumate como voluntario</h2>
         <p>Completa el formulario</p>
         <form action="#" method="post">
-            <label for="nombre"> Nombre y apellido</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej: Agustina Martinez" required>
+
+            <label for="nombre"> Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Ignacio Perez" required>
             <br>
-            <label for="email"> Email</label>
-            <input type="email" name="email" id="email" required>
+            <label for="email">Correo Electronico:</label>
+            <input type="email" name="email" id="email" placeholder="tucorreo@mail.com" required>
             <br>
-            <label for="tel">Teléfono</label>
-            <input type="tel" name="telefono" id="telefono" placeholder="+54 9 1134567890" required>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="11 1234-5678">
+            <br>
+            <label for="Programas">Elegi el programa en el que queres colaborar:</label>
+            <select name="Programas" id="Programas" required>
+                <option value="">Elegi tu programa</option>
+                <option value="1">Conectando Saberes</option>
+                <option value="2">Cuidando vidas</option>
+                <option value="3">Manos a la obra</option>
+            </select>
+
+            <br>
+            <label for="Contanos">Contanos que te gustaria aportar a esta gran comunidad!</label>
+            <textarea name="Contanos" id="Contanos" rows="5"></textarea>
             <br>
             <button type="submit">Enviar</button>
+            
         </form>
     </main>
 

@@ -12,6 +12,8 @@ btnModo.addEventListener("click", () => {
     
     const modoActivo = document.body.classList.contains("modo-oscuro");
     
+    localStorage.setItem("modoOscuro", modoActivo);
+    
     if (modoActivo) {
         btnModo.textContent = "modo claro";
     } else {

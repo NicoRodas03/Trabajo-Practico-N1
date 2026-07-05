@@ -1,4 +1,10 @@
 const btnModo = document.getElementById("btn-modo");
+if (localStorage.getItem("modoOscuro") === "true") {
+    document.body.classList.add("modo-oscuro");
+    btnModo.textContent = "modo claro";
+} else {
+    btnModo.textContent = "modo oscuro";
+}
 
 btnModo.addEventListener("click", () => {
     
